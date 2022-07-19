@@ -5,6 +5,7 @@ ruby "3.1.0"
 
 gem "rails", "~> 7.0.2", ">= 7.0.2.2"
 
+gem "activeadmin"
 gem "bootsnap", require: false
 gem "bootstrap", "~> 5.1.3"
 gem "devise"
