@@ -21,6 +21,11 @@ ActiveAdmin.register GolfTournament do
   end
 
   controller do
+    def create
+      super
+      Services::EnrollAllGolfersInGolfTournament.call(golf_tournament: @golf_tournament)
+    end
+
     def update
       payouts_array = params[:golf_tournament][:payouts].split(/\r\n|\r|\n|,\s?/)
       params[:golf_tournament][:payouts] = payouts_array

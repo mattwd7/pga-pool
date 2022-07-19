@@ -306,6 +306,7 @@ GEM
       childprocess (>= 0.5, < 5.0)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2)
+    service_objects_rails (0.1.0)
     shoulda-matchers (5.1.0)
       activesupport (>= 5.2.0)
     sprockets (4.0.3)
@@ -374,6 +375,7 @@ DEPENDENCIES
   rubocop-rails
   rubocop-rspec
   selenium-webdriver
+  service_objects_rails
   shoulda-matchers
   sprockets-rails
   standard
