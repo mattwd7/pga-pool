@@ -13,4 +13,8 @@ RSpec.describe GolferGolfTournament, type: :model do
     it { is_expected.to belong_to(:golf_tournament) }
     it { is_expected.to belong_to(:golfer) }
   end
+
+  describe "Validations >" do
+    it { is_expected.to validate_uniqueness_of(:golfer_id).scoped_to(:golf_tournament_id) }
+  end
 end

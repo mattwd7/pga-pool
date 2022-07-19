@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_07_19_212331) do
+ActiveRecord::Schema[7.0].define(version: 2022_07_19_214823) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -56,6 +56,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_07_19_212331) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["golf_tournament_id"], name: "index_golfer_golf_tournaments_on_golf_tournament_id"
+    t.index ["golfer_id", "golf_tournament_id"], name: "one_golfer_instance_per_tournament_index", unique: true
     t.index ["golfer_id"], name: "index_golfer_golf_tournaments_on_golfer_id"
   end
 
