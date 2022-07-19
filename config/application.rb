@@ -27,6 +27,7 @@ module NewApp
         routing_specs: false
       g.stylesheets false
       g.helper false
+      g.jbuilder false
     end
   end
 end
