@@ -1,0 +1,13 @@
+AllCops:
+  DisabledByDefault: false
+  NewCops: enable
+  TargetRubyVersion: 3.1.0
+
+require:
+  - standard/cop/block_single_line_braces
+  - rubocop-rspec
+  - rubocop-rails
+  - rubocop-performance
+
+inherit_gem:
+  standard: config/ruby-3.0.yml
