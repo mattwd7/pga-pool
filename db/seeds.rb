@@ -4,6 +4,11 @@ if Rails.env.development?
     password: "password",
     password_confirmation: "password"
   )
+  User.create(
+    email: "mattwd7@gmail.com",
+    password: "password",
+    password_confirmation: "password"
+  )
 end
 
 JSON.parse(File.read("public/static_data/all_pga_golfers.json")).each do |golfer_info|
