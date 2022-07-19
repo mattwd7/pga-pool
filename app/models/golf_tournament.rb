@@ -1,0 +1,2 @@
+class GolfTournament < ApplicationRecord
+end
